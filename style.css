@@ -1,0 +1,345 @@
+:root {
+    --background-color: #fdf0d5;
+    --second-background-color: #c1121f;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background-color);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.body #para {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 322px;
+    left: 594px;
+}
+
+.body {
+    position: relative;
+}
+
+.head {
+    background-color: var(--background-color);
+    height: 11vh;
+    border-bottom: 0.5vh solid #c1121f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+}
+
+.head h5 {
+    color: #c1121f;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4vw;
+}
+
+
+
+#add {
+    font-size: 1.5vw;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 2em;
+    width: 6.1em;
+    background-color: var(--second-background-color);
+    color: white;
+    position: fixed;
+    top: 14vh;
+    right: 2vw;
+    z-index: 3;
+}
+
+dialog {
+    border: none;
+    border-radius: 1.5vw;
+    height: 25vh;
+    width: 53vw;
+    background-color: white;
+    box-shadow: 4px 2px 8px 6px lightgray;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 19vh;
+    outline: none;
+}
+
+dialog .poptext {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+dialog .poptext input {
+    outline: none;
+    border: none;
+    border-bottom: 3px solid var(--second-background-color);
+    font-size: 2.6vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 18.7em;
+    height: 8%;
+    border-radius: 0.4em;
+    margin: auto;
+    margin-top: 1em;
+    background-color: white;
+}
+
+::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7em;
+    color: var(--background-color);
+}
+
+dialog #cancel {
+    background-color: var(--second-background-color);
+    color: white;
+    font-size: 1.2vw;
+    height: 6vh;
+    width: 6vw;
+    border-radius: 0.4em;
+    outline: none;
+    border: none;
+    margin-left: 30em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+dialog #save {
+    background-color: rgb(23, 0, 151);
+    color: white;
+    font-size: 1.2vw;
+    height: 6vh;
+    width: 6vw;
+    border-radius: 0.5em;
+    outline: none;
+    border: none;
+    margin-left: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.habit {
+    margin-top: -33px;
+    margin-left: 01em;
+    height: 5em;
+    width: 23em;
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#tick {
+    margin-right: 1em;
+    height: 27px;
+    width: 27px;
+    border: 2px solid red;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid white;
+    background-color: var(--background-color);
+    font-size: 18px;
+    color: white;
+}
+
+#text {
+    margin-left: 0px;
+    font-size: 2em;
+    height: 2em;
+    width: 9em;
+    background-color: rgba(0, 0, 255, 0.823);
+    word-break: break-all;
+    outline: none;
+    border: none;
+    border-radius: 0.4em;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 14px;
+    padding-right: 44px;
+    padding-top: 10px;
+    color: white;
+}
+
+.line {
+    height: 2em;
+    width: 11em;
+    border: none;
+    border-bottom: 2px solid white;
+    position: fixed;
+    z-index: 7;
+    left: 34em;
+    bottom: 26em;
+    visibility: hidden;
+
+}
+
+.dots {
+    height: 2.5em;
+    width: 0.7em;
+    /* background-color: rgba(0, 0, 255, 0.3); */
+    color: white;
+    font-size: 25px;
+    border-radius: 6px;
+    position: relative;
+    z-index: 9;
+    cursor: pointer;
+    right: 20px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-top: 11px;
+}
+
+#btn {
+    height: 1em;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+}
+
+.dotchild {
+    height: 2.6em;
+    width: 2.6em;
+    background-color: grey;
+    position: absolute;
+    top: 55px;
+    right: -8px;
+    display: none;
+    z-index: 5;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 2px lightgrey;
+}
+
+.dots:active {
+    transform: scale(0.979);
+}
+
+
+
+.style {
+    height: 8vh;
+    width: 43vw;
+    margin-top: 5vh;
+    margin-left: 6%;
+    border-radius: 9px;
+    background-color: var(--background-color);
+    /* border: 2px solid red; */
+    color: white;
+    font-size: 2.4rem;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.style2 {
+    box-sizing: border-box;
+    border-right: 8px solid var(--second-background-color);
+    height: 8vh;
+    width: 43vw;
+    border-radius: 9px;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
+    padding-top: 0px;
+    background-color: var(--second-background-color);
+    color: white;
+    font-size: 2.4rem;
+    /* padding: 8px; */
+    margin-left: 1.4vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+    /* word-break: break-all; */
+}
+
+.style ::-webkit-scrollbar {
+    display: none;
+}
+
+.style3 {
+    border: 3px solid var(--second-background-color);
+    border-radius: 50%;
+    outline: none;
+    height: 1.7em;
+    width: 1.8em;
+    font-size: 18px;
+    background-color: var(--background-color);
+    cursor: pointer;
+}
+
+.div3{
+    height: 8vh;
+    width: 2vw;
+    background-color: var(--background-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.edit {
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    height: 1em;
+    width: 1em;
+    font-size: 18px;
+    background-color: var(--second-background-color);
+    cursor: pointer;
+     margin-left: 2px; 
+    position: static;
+   
+}
+
+.delete {
+   border: none;
+    border-radius: 4px;
+    outline: none;
+    height: 1em;
+    width: 1em;
+    font-size: 18px;
+    background-color: var(--second-background-color);
+    cursor: pointer;
+     /* margin-left: 2px;  */
+    position: static;
+}
+
+footer {
+    height: 0.6vh;
+    width: 100vw;
+    background-color: var(--second-background-color);
+    position: fixed;
+    bottom: 0px;
+    z-index: 6;
+}
+
+.vis{
+    visibility: visible;
+}
+.hid{
+    visibility: none;
+}
+
+
