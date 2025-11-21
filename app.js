@@ -148,6 +148,7 @@ window.addEventListener("load", () => {
     btn2.classList.add("edit");
     btn1.classList.add("delete");
     btn2.innerHTML = '<i class="fa-solid fa-pen-to-square"></i>';
+        btn1.innerHTML = '<i class="fa-solid fa-trash"></i>';
 
 
 
