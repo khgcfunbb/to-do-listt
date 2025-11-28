@@ -306,7 +306,7 @@ dialog #save {
     height: 1em;
     width: 1em;
     font-size: 18px;
-    background-color: var(--second-background-color);
+    /* background-color: var(--second-background-color); */
     cursor: pointer;
      margin-left: 2px; 
     position: static;
@@ -320,10 +320,10 @@ dialog #save {
     height: 1em;
     width: 1em;
     font-size: 18px;
-    background-color: var(--second-background-color);
+    /* background-color: var(--second-background-color); */
     cursor: pointer;
      /* margin-left: 2px;  */
-    position: static;
+    /* position: static; */
 }
 
 footer {
